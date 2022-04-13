@@ -1,5 +1,5 @@
 // Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o la unidad).
-
+const prompt = require('prompt-sync')({sigint: true});
  
 let numerosPrimos = [];
 let numerosNoPrimos = [];
@@ -23,14 +23,14 @@ for (let i = 1; i <= numero; i++) {
 
 // console.log(numerosPrimos);
 // console.log(numerosNoPrimos);
-yt
+
 if (numerosPrimos.length <= 2) {
 
-    alert('Es primo. ');
+    console.log('Es primo. ');
     
 } else if (numerosPrimos.length >= 2 && numerosNoPrimos.length >=1 ) {
 
-    alert('No es primo. ');
+    console.log('No es primo. ');
     
 }
 
