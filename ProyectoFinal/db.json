@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "name": "Administrador",
+      "username": "admin",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Luis Felipe Reyes",
+      "username": "lreyes",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "customers": [
+    {
+      "name": "Luis Felipe",
+      "lastname": "Reyes Baez",
+      "email": "lreyes@test.com",
+      "address": "Santo Domingo Este, Republica Dominicana",
+      "createdAt": "2022-05-28",
+      "id": 1
+    },
+    {
+      "name": "John",
+      "lastname": "Doe",
+      "email": "jdoe@test.com",
+      "address": "United States, Miami FL",
+      "createdAt": "2022-05-28",
+      "id": 2
+    },
+    {
+      "name": "Jose",
+      "lastname": "Capellan",
+      "email": "jcapellan@test.com",
+      "address": "Republica Dominicana",
+      "createdAt": "2022-05-28",
+      "id": 3
+    }
+  ]
+}
