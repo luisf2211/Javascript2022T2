@@ -1,5 +1,10 @@
-Proyecto Final presentado por: 
+Proyecto-CRM
+ITLA - PROYECTO FINAL
 
-- Luis Felipe Reyes Baez
-- Joel 
-- Ambioris
+Pasos para hacer el deployment:
+
+1 - Clonar el proyecto
+
+2- Inicializar el servidor json "json-server --watch db.json"
+
+3 - Inicializar el servidor express js "node index.js"
