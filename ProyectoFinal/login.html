@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/login.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/signin.css">
+    <title>Inicio Sesion</title>
+</head>
+<body class="text-center"> 
+  <main class="form-signin">
+
+    <img class="mb-4" src="/images/clouds.png" alt="" width="124" height="120">
+    <h1 class="h3 mb-3 fw-normal">Proyecto CRM</h1>
+    <br>
+    
+    <!-- FORM SIGN-IN -->
+  
+    <form id="form-SignIn" >    
+      <div class="form-floating">
+        <input type="username" name="username" class="form-control" id="username" placeholder="username" required >
+        <label for="floatingInput">Username</label>
+      </div>
+  
+      <br>
+      
+      <div class="form-floating">
+        <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <br>
+  
+      <button type="submit" class="btn btn-primary"  >Iniciar Session</button>
+      
+    </form>
+    <p class="mt-5 mb-3 text-muted">&copy;GRUPO #1, Proyecto Final 2022</p>
+  </main>
+</body>
+</html>

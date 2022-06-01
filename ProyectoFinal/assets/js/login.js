@@ -1,40 +1,34 @@
-let userFormulario = document.getElementById('form-SignIn'); 
+const userForm = document.querySelector("#form-SignIn")
 
-window.addEventListener("load", e => { 
+window.addEventListener("load", event=> {
     localStorage.removeItem('user')
 })
 
-function singIn(event) { 
+function buscaruser(event) {
     event.preventDefault()
-
-
-    const inputs = event.target.elements; 
-    const user = { 
-        username: inputs['username'].value,
-        password: inputs['password'].value
+    
+    const inputs = event.target.elements;
+    const user = {
+        username: inputs["username"].value,
+        password: inputs["password"].value,
     }
 
-
-    callAPI(`${url}/users/?username=${user.username}&password=${user.password}`, "GET", {})
+    callAPI(`${url}/user?username=${user.username}&password=${user.password}`, "GET", {})
     .then( user => {
         if (user.length === 0){
             Swal.fire({
-                title: 'Oops!!',
-                text: 'Revisa las credenciales ingresadas',
+                title: 'Proyecto CRM',
+                text: 'User Name o Password Incorrecto',
                 icon: 'error',
                 confirmButtonColor:'#3085d6',
-                confirmButtonText: 'Intentar de nuevo'
+                confirmButtonText: 'OK'
               });  
         }else{
-            localStorage.setItem('user', JSON.stringify(user)); 
-            window.location.href="dashboard";
-            // console.log('Login...');
+            //Window.localStorage
+            localStorage.setItem('user',JSON.stringify(user))
+            window.location.href="home";
         }
-
     })    
-
-
 }
 
-
-userFormulario.addEventListener('submit', singIn)
+userForm.addEventListener("submit", buscaruser)

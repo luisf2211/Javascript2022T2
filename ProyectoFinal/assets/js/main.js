@@ -1,5 +1,6 @@
 const url = "http://localhost:3000"
 
+
 function getParam(param) {
     const params = new URLSearchParams(window.location.search)
     return params.get(param)

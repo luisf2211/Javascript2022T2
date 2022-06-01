@@ -1,74 +1,202 @@
 {
-  "users": [
+  "user": [
     {
-      "name": "Administrador",
-      "username": "admin",
-      "password": "123",
-      "id": 1
-    },
-    {
-      "name": "Luis Felipe Reyes",
+      "id": 1,
+      "name": "Luis Reyes",
       "username": "lreyes",
-      "password": "123",
-      "id": 2
+      "password": "123"
     },
     {
-      "name": "John Doe",
-      "username": "jdoe",
-      "password": "123",
-      "id": 3
+      "id": 2,
+      "name": "Delphine Syddon",
+      "username": "DSyddon",
+      "password": "123456"
     },
     {
-      "name": "Mike Odo",
-      "username": "modo",
-      "password": "123",
-      "id": 4
+      "id": 3,
+      "name": "Randie Darwood",
+      "username": "rdarwood",
+      "password": "ujuKOg"
     },
     {
-      "name": "Nicolas Shzurman",
-      "username": "nshzurman",
-      "password": "123",
-      "id": 5
+      "id": 6,
+      "name": "Joel Bautista",
+      "username": "jbautista",
+      "password": "123456"
     },
     {
-      "name": "Nuria Piera",
-      "username": "npiera",
-      "password": "123",
-      "id": 6
+      "id": 7,
+      "name": "Ariela Reyes",
+      "username": "Areyes@gmail.com",
+      "password": "454545"
     }
   ],
-  "customers": [
+  "customer": [
     {
-      "name": "Luis",
-      "lastname": "Reyes",
+      "id": 1,
+      "name": "Emmie Janson",
+      "email": "ejanson0@edublogs.org",
+      "address": "8111 Kedzie Avenue",
+      "createdAt": "2021-11-16"
+    },
+    {
+      "id": 2,
+      "name": "Hodge Readshall",
+      "email": "hreadshall1@globo.com",
+      "address": "31 Knutson Circle",
+      "createdAt": "2022-04-13"
+    },
+    {
+      "id": 3,
+      "name": "Bobinette Cashen",
+      "email": "bcashen2@angelfire.com",
+      "address": "5 Crownhardt Pass",
+      "createdAt": "2021-01-10"
+    },
+    {
+      "id": 4,
+      "name": "Umberto Yve",
+      "email": "uyve3@hud.gov",
+      "address": "338 Lillian Junction",
+      "createdAt": "2021-07-17"
+    },
+    {
+      "id": 5,
+      "name": "Aimee Di Franceschi",
+      "email": "adi4@jugem.jp",
+      "address": "37 Jackson Parkway",
+      "createdAt": "2021-03-12"
+    },
+    {
+      "id": 7,
+      "name": "Brunilda Altagracia",
+      "email": "baltagracia@gmail.com",
+      "address": "Abreu 174, villa consuelo",
+      "createdAt": "2022-05-24"
+    },
+    {
+      "id": 8,
+      "name": "Yasiel Tejada",
+      "email": "Ytejada@hotmail.com",
+      "address": "Yaguate ",
+      "createdAt": "2022-05-24"
+    },
+    {
+      "id": 9,
+      "name": "Luis Reyes",
       "email": "lreyes@test.com",
-      "address": "Santo Domingo Este, Republica Dominicana",
-      "createdAt": "2022-05-29",
-      "id": 1
+      "address": "Santo Domingo, Republica Dominicana",
+      "createdAt": "2022-05-29"
+    }
+  ],
+  "interaction": [
+    {
+      "id": 1,
+      "note": "La proxima llamada",
+      "user": {
+        "id": 8,
+        "name": "Manny Perez",
+        "username": "mparez@gmail.com",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 7,
+        "name": "Brunilda Altagracia",
+        "email": "baltagracia@gmail.com",
+        "address": "Abreu 174, villa consuelo",
+        "createdAt": "2022-05-24"
+      },
+      "createdAt": "2022-05-28"
     },
     {
-      "name": "John",
-      "lastname": "Doe",
-      "email": "jdoe@test.com",
-      "address": "United States, Miami FL",
-      "createdAt": "2022-05-28",
-      "id": 2
+      "id": 2,
+      "note": "prueba",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 4,
+        "name": "Umberto Yve",
+        "email": "uyve3@hud.gov",
+        "address": "338 Lillian Junction",
+        "createdAt": "2021-07-17"
+      },
+      "createdAt": "2022-05-27"
     },
     {
-      "name": "Jose",
-      "lastname": "Capellan",
-      "email": "jcapellan@test.com",
-      "address": "Republica Dominicana",
-      "createdAt": "2022-05-28",
-      "id": 3
+      "id": 3,
+      "note": "llamada para el 15-05-2022 exitosa",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 1,
+        "name": "Emmie Janson",
+        "email": "ejanson0@edublogs.org",
+        "address": "8111 Kedzie Avenue",
+        "createdAt": "2021-11-16"
+      },
+      "createdAt": "2022-05-29"
     },
     {
-      "name": "Nicolas",
-      "lastname": "Shzurman",
-      "email": "nshzurman",
-      "address": "New Zealand",
-      "createdAt": "2022-05-29",
-      "id": 4
+      "id": 4,
+      "note": "llamada",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 1,
+        "name": "Emmie Janson",
+        "email": "ejanson0@edublogs.org",
+        "address": "8111 Kedzie Avenue",
+        "createdAt": "2021-11-16"
+      },
+      "createdAt": "2022-05-29"
+    },
+    {
+      "id": 5,
+      "note": "Reporte de errores en consola de usuario.",
+      "user": {
+        "id": 1,
+        "name": "Luis Reyes",
+        "username": "lreyes",
+        "password": "123"
+      },
+      "customer": {
+        "id": 1,
+        "name": "Emmie Janson",
+        "email": "ejanson0@edublogs.org",
+        "address": "8111 Kedzie Avenue",
+        "createdAt": "2021-11-16"
+      },
+      "createdAt": "2022-05-29"
+    },
+    {
+      "id": 6,
+      "note": "Llamar cliente a las 3 PM (Listo)\nCliente acepto la propuesta.",
+      "user": {
+        "id": 1,
+        "name": "Luis Reyes",
+        "username": "lreyes",
+        "password": "123"
+      },
+      "customer": {
+        "id": 9,
+        "name": "Luis Reyes",
+        "email": "lreyes@test.com",
+        "address": "Santo Domingo, Republica Dominicana",
+        "createdAt": "2022-05-29"
+      },
+      "createdAt": "2022-05-29"
     }
   ]
 }

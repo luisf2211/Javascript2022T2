@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/editar-customer.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"> 
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="/css/dashboard.rtl.css">
+    <link href="/css/dashboard.css" rel="stylesheet">
+    <title>Actualizar Cliente</title>
+</head>
+<body>
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="home">Proyecto CRM</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search"> -->
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        <a class="nav-link px-3" href="/">Cerrar Session</a>
+      </div>
+    </div>
+  </header>  
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+  
+            <li class="nav-item">
+              <section>
+                <img src="/images/profile.png" alt="">
+              </section>      
+              <section>
+                <p id="welcomComponent"> Bienvenido, user </p>
+              </section>                    
+            </li>      
+            <hr>      
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home">
+                <span data-feather="home" class="align-text-bottom"></span>
+                Home
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="user">
+                <span  class="align-text-bottom"></span>
+                 Usuario
+              </a>
+            </li>   
+
+            <li class="nav-item">
+              <a class="nav-link active" href="customer">Cliente</a>
+            </li>    
+            <li class="nav-item">
+              <a class="nav-link" href="interaction">Interaccion</a>
+            </li>                   
+          </ul>
+      </nav>
+
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Editar Cliente</h1>
+    </div>  
+                <div class="card">
+                    <div class="card-body">
+                        <form id="customer-form">
+                            <input type="hidden" name="id" id="id">
+                            <input type="hidden" name="createdAt" id="createdAt">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Direccion</label>
+                                <textarea name="address" class="form-control"  id="address" cols="30" rows="3"></textarea>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="submit" class="btn btn-success btn-sm">
+                                <i class="bi bi-check2"></i>  Guardar
+                              </button>
+                              <a href="customer" class="btn btn-danger btn-sm"><i class="bi bi-x-lg"></i> Cancelar</a>                            
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </main>
+</body>
+</html>
