@@ -44,5 +44,23 @@ let urlUsers = "http://localhost:3000/users";
      document.getElementById('myChart'),
      config
    );
+
+
+   const userLogin = JSON.parse(localStorage.getItem('user')); 
+   console.log(userLogin); 
+
+   if (userLogin == null) {
+
+    window.location.href="/"; 
+     
+   } else { 
+
+    const welcomeComponent = document.getElementById('welcomeComponent')
+    welcomeComponent.innerHTML =  `Welcome, ${userLogin[0].name}`  
+     
+   }
+
+
  })();
 
+ 

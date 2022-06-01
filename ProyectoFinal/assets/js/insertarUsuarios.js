@@ -31,4 +31,18 @@ function insertarUsers(e) {
     
 }
 
+const userLogin = JSON.parse(localStorage.getItem('user')); 
+   console.log(userLogin); 
+
+   if (userLogin == null) {
+
+    window.location.href="/"; 
+     
+   } else { 
+     console.log(userLogin)
+     const welcomeComponent = document.getElementById('welcomeComponent')
+     welcomeComponent.innerHTML =  `Welcome, ${userLogin[0].name}`  
+  
+   }
+
 insertUsersForm.addEventListener('submit', insertarUsers)

@@ -50,8 +50,6 @@ function borrarCustomer(id){
       });
 }
 
-console.log(editarCliente)
-
 function editarCustomer(id) {
 
     (async () => {

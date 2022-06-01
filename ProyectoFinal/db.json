@@ -11,15 +11,39 @@
       "username": "lreyes",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "John Doe",
+      "username": "jdoe",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Mike Odo",
+      "username": "modo",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "Nicolas Shzurman",
+      "username": "nshzurman",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "Nuria Piera",
+      "username": "npiera",
+      "password": "123",
+      "id": 6
     }
   ],
   "customers": [
     {
-      "name": "Luis Felipe",
-      "lastname": "Reyes Baez",
+      "name": "Luis",
+      "lastname": "Reyes",
       "email": "lreyes@test.com",
       "address": "Santo Domingo Este, Republica Dominicana",
-      "createdAt": "2022-05-28",
+      "createdAt": "2022-05-29",
       "id": 1
     },
     {
@@ -37,6 +61,14 @@
       "address": "Republica Dominicana",
       "createdAt": "2022-05-28",
       "id": 3
+    },
+    {
+      "name": "Nicolas",
+      "lastname": "Shzurman",
+      "email": "nshzurman",
+      "address": "New Zealand",
+      "createdAt": "2022-05-29",
+      "id": 4
     }
   ]
 }

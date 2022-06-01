@@ -1,13 +1,19 @@
-let userForm = document.getElementById('form-SignIn'); 
+let userFormulario = document.getElementById('form-SignIn'); 
+
+window.addEventListener("load", e => { 
+    localStorage.removeItem('user')
+})
 
 function singIn(event) { 
     event.preventDefault()
-    
+
+
     const inputs = event.target.elements; 
     const user = { 
         username: inputs['username'].value,
         password: inputs['password'].value
     }
+
 
     callAPI(`${url}/users/?username=${user.username}&password=${user.password}`, "GET", {})
     .then( user => {
@@ -20,10 +26,15 @@ function singIn(event) {
                 confirmButtonText: 'Intentar de nuevo'
               });  
         }else{
+            localStorage.setItem('user', JSON.stringify(user)); 
             window.location.href="dashboard";
-            console.log('felicidades')
+            // console.log('Login...');
         }
+
     })    
+
+
 }
 
-userForm.addEventListener('submit', singIn)
+
+userFormulario.addEventListener('submit', singIn)
